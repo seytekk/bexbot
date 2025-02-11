@@ -2,7 +2,7 @@
 packages = ["python311Full", "gcc", "libffi", "openssl"]
 
 [phases.setup]
-commands = ["pip install -r requirements.txt"]
+commands = ["python3 -m pip install -r requirements.txt"]
 
 [phases.start]
 commands = ["python3 bexx.py"]
