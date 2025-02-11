@@ -1,11 +1,11 @@
 [build]
-packages = ["python311Full", "gcc"]
+packages = ["python3", "python3Packages.pip", "gcc"]
 
 [phases.setup]
-commands = ["pip3 install --upgrade pip"]
+commands = ["python -m ensurepip", "python -m pip install --upgrade pip", "pip install -r requirements.txt"]
 
 [phases.start]
-commands = ["python3 bexx.py"]
+commands = ["python bexx.py"]
 
 [build.environment]
 PYTHON_VERSION = "3.9"
