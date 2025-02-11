@@ -1,5 +1,5 @@
 [build]
-packages = ["python3", "python3Packages.pip", "gcc"]
+packages = ["python311Full", "gcc"]
 
 [phases.setup]
 commands = ["pip3 install --upgrade pip", "pip3 install -r requirements.txt"]
