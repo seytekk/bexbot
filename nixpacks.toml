@@ -2,7 +2,7 @@
 packages = ["python311Full", "gcc"]
 
 [phases.setup]
-commands = ["pip3 install --upgrade pip", "pip3 install -r requirements.txt"]
+commands = ["pip3 install --upgrade pip"]
 
 [phases.start]
 commands = ["python3 bexx.py"]
