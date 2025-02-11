@@ -2,11 +2,14 @@
 packages = ["python3", "python3Packages.pip", "gcc", "libffi", "openssl"]
 
 [phases.setup]
-commands = ["pip install --upgrade pip", "pip install -r requirements.txt"]
-[phases.setup]
-commands = ["pip install --upgrade pip", "pip install -r requirements.txt"]
+commands = [
+  "pip install --upgrade pip",
+  "pip install -r requirements.txt"
+]
+
 [phases.start]
 commands = ["python3 bexx.py"]
 
 [build.environment]
 PYTHON_VERSION = "3.9"
+
