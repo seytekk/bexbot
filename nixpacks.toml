@@ -1,8 +1,8 @@
 [build]
-packages = ["python311Full", "gcc", "libffi", "openssl"]
+packages = ["python311Full", "gcc", "libffi", "openssl", "zlib"]
 
 [phases.setup]
-commands = ["python3 -m pip install -r requirements.txt"]
+commands = ["python3 -m pip install --no-cache-dir -r requirements.txt"]
 
 [phases.start]
 commands = ["python3 bexx.py"]
